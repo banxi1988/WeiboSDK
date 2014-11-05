@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    defaultConfig{
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+    }
+}
+
+dependencies {
+    compile rootProject.dependsAndroidSupportV4
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
